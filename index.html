@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="calculator-card">
+      <header class="calc-header">
+        <div class="brand">⚡ NeonCalc</div>
+        <button id="historyToggle" class="history-btn">🕓</button>
+      </header>
+
+      <div class="display" id="display">
+        <div class="memory-row">
+          <button class="btn mem" data-action="mc">MC</button>
+          <button class="btn mem" data-action="mr">MR</button>
+          <button class="btn mem" data-action="mplus">M+</button>
+          <button class="btn mem" data-action="mminus">M−</button>
+        </div>
+        <div class="expression" id="expression">0</div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="btn func" data-action="clear">C</button>
+        <button class="btn func" data-action="delete">⌫</button>
+        <button class="btn func" data-value="%">%</button>
+        <button class="btn op" data-value="/">÷</button>
+
+        <button class="btn num" data-value="7">7</button>
+        <button class="btn num" data-value="8">8</button>
+        <button class="btn num" data-value="9">9</button>
+        <button class="btn op" data-value="*">×</button>
+
+        <button class="btn num" data-value="4">4</button>
+        <button class="btn num" data-value="5">5</button>
+        <button class="btn num" data-value="6">6</button>
+        <button class="btn op" data-value="-">−</button>
+
+        <button class="btn num" data-value="1">1</button>
+        <button class="btn num" data-value="2">2</button>
+        <button class="btn num" data-value="3">3</button>
+        <button class="btn op" data-value="+">+</button>
+
+        <button class="btn num wide" data-value="0">0</button>
+        <button class="btn num" data-value=".">.</button>
+        <button class="btn equals" data-action="equals">=</button>
+      </div>
+
+      <footer class="card-footer">Made with 💜 by You</footer>
+    </section>
+
+    <aside id="historyPanel" class="history-panel">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
